@@ -50,6 +50,10 @@ client.on('message', async msg => {
         //msg.react(getRandomItem(array));
     }
 });
+client.on('message', async (msg) => {
+    const chat = await msg.getChat();
+    await chat.sendSeen();
+});
 /*
 client.on('message', async msg => {
     console.log('Terdapat Chat, Lagi Di respon..');
