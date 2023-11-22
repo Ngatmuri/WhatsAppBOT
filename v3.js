@@ -68,7 +68,7 @@ client.on('message', async msg => {
     sleep(15000).then(() => {
 
         client.on('message', async (msg) => {
-            console.log('Terdapat Chat, Lagi Di respon..', msg);
+            console.log('Terdapat Chat, Lagi Di respon..',);
             if (msg.isStatus === false) {
             var n=20000000;
             for(var i=1; i<=n; i++){
